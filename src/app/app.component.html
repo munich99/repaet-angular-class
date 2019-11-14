@@ -2,11 +2,13 @@
 hallo 
 
 <app-child 
-*ngFor="let course of courses; index as i; first as firstIndex"
+*ngFor="let course of courses; index as i; first as firstIndex" 
 [course]="course"
 [courseIndex]="i+1"
-
+[class.first-index]="firstIndex"
 (eigeneFunktion)="onEigeneFunktion($event)"
-></app-child>
+>
+<!--firstIndex statt TRUE (  [class.first-index]="true"   )-->
+</app-child>
 
 <router-outlet></router-outlet>

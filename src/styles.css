@@ -1,4 +1,8 @@
-  
+app-child.first-index {
+  border: 5px solid green;
+  display: block;
+}
+
   .card {
     margin:0 auto;
     text-align: center;
