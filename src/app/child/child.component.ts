@@ -20,6 +20,8 @@ export class ChildComponent implements OnInit {
   }
 
   isImageVisible(){
+    let xx = "22"
+    console.log(xx);
     return this.course && this.course.iconUrl
     // return true  
    
