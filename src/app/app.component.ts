@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { COURSES } from './db-data';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lernen';
+
+  
+  courses:any = COURSES;
+
+  onEigeneFunktion(irgendwas:any){
+    console.log(irgendwas)
+  }
 }
