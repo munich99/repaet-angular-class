@@ -2,10 +2,14 @@
 hallo 
 
 <app-child 
-*ngFor="let course of courses; index as i; first as firstIndex" 
+*ngFor="let course of courses; index as i; first as firstIndex; last as lastIndex;
+ even as evenIndex; odd as oddIndex" 
 [course]="course"
 [courseIndex]="i+1"
 [class.first-index]="firstIndex"
+[class.last-index]="lastIndex"
+[class.odd-index]="oddIndex"
+[class.even-index]="evenIndex"
 (eigeneFunktion)="onEigeneFunktion($event)"
 >
 <!--firstIndex statt TRUE (  [class.first-index]="true"   )-->

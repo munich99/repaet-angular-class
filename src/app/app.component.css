@@ -1,0 +1,26 @@
+app-child {
+    display: block;
+}
+
+app-child.first-index {
+    border-top: 5px solid green;    
+    padding-top: 1em;
+    
+  }
+  
+  app-child.last-index {
+    border-bottom: 5px solid green;
+   
+  }
+
+  app-child.odd-index {
+    background-color: antiquewhite;
+   
+  }
+
+  app-child.even-index {
+    background-color: brown;
+   
+  }
+  
+
