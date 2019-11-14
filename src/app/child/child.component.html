@@ -2,9 +2,9 @@
     
     
     <div class="card-container">
-      <div class="card-title">{{course.description + '&nbsp;&nbsp;' + courseIndex}}</div>
-      <img [src]="course.iconUrl" alt="course"> 
-      <div class="card-description">{{course.longDescription}}</div>
+      <div class="card-title">{{course?.description + '&nbsp;&nbsp;' + courseIndex}}</div>
+      <img *ngIf="isImageVisible()" [src]="course.iconUrl" alt="course"> 
+      <div class="card-description">{{course?.longDescription}}</div>
       <button (click)="viewCourse()">click</button>
     </div>
   </div>

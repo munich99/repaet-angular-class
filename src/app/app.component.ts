@@ -14,6 +14,6 @@ export class AppComponent {
   courses:any = COURSES;
 
   onEigeneFunktion(irgendwas:any){
-    console.log(irgendwas)
+    // console.log(irgendwas)
   }
 }

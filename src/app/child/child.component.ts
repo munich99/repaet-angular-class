@@ -15,9 +15,14 @@ export class ChildComponent implements OnInit {
   @Output()
   eigeneFunktion = new EventEmitter<any>()
 
-  viewCourse(){    
+  viewCourse(){  
     this.eigeneFunktion.emit(this.course);
-    console.log(this.course);
+  }
+
+  isImageVisible(){
+    return this.course && this.course.iconUrl
+    // return true  
+   
   }
 
   constructor() { }
