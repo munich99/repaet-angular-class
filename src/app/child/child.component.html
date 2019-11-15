@@ -7,6 +7,13 @@
       <div class="card-description"
       [ngStyle]="{'color':'red','font-style': 'italic'}">
         <span [ngStyle]="onNgStyle()">{{course?.longDescription}}</span></div>
+
+        <div  [ngSwitch]="course.category">
+          <div [ngStyle]="{'border':'1px solid blue', 'display':'inline'}" *ngSwitchCase="'BEGINNER'">Beginner</div>
+          <div [ngStyle]="{'border':'1px solid blue', 'display':'inline'}" *ngSwitchCase="'INTERMEDIATE'">Intermediate</div>
+          <div [ngStyle]="{'border':'1px solid blue', 'display':'inline'}" *ngSwitchDefault>all</div>
+
+        </div>
       <button (click)="viewCourse()">click</button>
     </div>
   </div>
