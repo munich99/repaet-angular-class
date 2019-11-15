@@ -10,6 +10,8 @@ import { COURSES } from './db-data';
 export class AppComponent {
   title = 'lernen';
 
+  newDate = new Date();
+
   
   courses:any = COURSES;
 
