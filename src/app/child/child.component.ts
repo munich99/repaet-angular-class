@@ -31,6 +31,13 @@ export class ChildComponent implements OnInit {
     
   }
 
+  BackGroundImage() {
+    if (this.course.iconUrl)
+    return {
+      "background-image": "url('"+ this.course.iconUrl +"')"      
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
