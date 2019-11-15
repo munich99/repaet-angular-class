@@ -1,8 +1,9 @@
 
-<div>{{newDate | date}}</div>
+<div>{{newDate | date:"d/MMMM/yy"}}</div>
+<div>{{title | titlecase}}</div>
 
 <app-child 
-*ngFor="let course of courses; index as i; first as firstIndex; last as lastIndex;
+*ngFor="let course of courses | slice:1:3; index as i; first as firstIndex; last as lastIndex;
  even as evenIndex; odd as oddIndex" 
 [course]="course"
 [courseIndex]="i+1"
