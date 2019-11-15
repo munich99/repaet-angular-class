@@ -23,8 +23,12 @@ export class ChildComponent implements OnInit {
     let xx = "22"
     console.log(xx);
     return this.course && this.course.iconUrl
-    // return true  
-   
+    // return true    
+  }
+
+  onNgStyle() {
+    return {'background-color':'yellow'};
+    
   }
 
   constructor() { }

@@ -1,10 +1,12 @@
-<div class="card">
+<div class="card" *ngIf="course">
     
     
     <div class="card-container beginner">
-      <div class="card-title">{{course?.description + '&nbsp;&nbsp;' + courseIndex}}</div>
+      <div class="card-title" [style.text-decoration]="'underline'">{{course?.description + '&nbsp;&nbsp;' + courseIndex}}</div>
       <img *ngIf="isImageVisible()" [src]="course.iconUrl" alt="course"> 
-      <div class="card-description">{{course?.longDescription}}</div>
+      <div class="card-description"
+      [ngStyle]="{'color':'red','font-style': 'italic'}">
+        <span [ngStyle]="onNgStyle()">{{course?.longDescription}}</span></div>
       <button (click)="viewCourse()">click</button>
     </div>
   </div>
